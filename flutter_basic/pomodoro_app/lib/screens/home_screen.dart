@@ -31,6 +31,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onStartPressed() {
+    totalSeconds = twentyFiveMinutes;
+
     timer = Timer.periodic(
       const Duration(seconds: 1), onTick, // ()=실행을 의미
     );
@@ -40,7 +42,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onResetTimer() {
-    totalSeconds = twentyFiveMinutes;
     setState(() {
       isRunning = false;
     });
