@@ -6,7 +6,7 @@ import 'package:webtton_app/widgets/webtoon_widget.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
-  Future<List<WebtoonModel>> webtoons = ApiServices.getTodaysToons();
+  Future<List<WebtoonModel>> webtoons = ApiServices.getTodaysToonsById();
 
   @override
   Widget build(BuildContext context) {

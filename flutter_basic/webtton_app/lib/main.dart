@@ -3,7 +3,8 @@ import 'package:webtton_app/screens/home_screen.dart';
 import 'package:webtton_app/services/api_services.dart';
 
 void main() {
-  ApiServices.getTodaysToons();
+  ApiServices.getTodaysToonsById();
+
   runApp(const App());
 }
 
